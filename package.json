@@ -1,0 +1,72 @@
+{
+  "name": "koa-boilerplate",
+  "version": "1.0.0",
+  "description": "koa脚手架",
+  "main": "app/index.js",
+  "scripts": {
+    "dev": "nodemon app/index.js --exec babel-node",
+    "build": "babel app -d dist",
+    "standardfix": "standard --fix"
+  },
+  "keywords": [
+    "Koa",
+    "Node"
+  ],
+  "author": "luhk",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "dayjs": "^1.8.15",
+    "del": "^5.0.0",
+    "fs-extra": "^8.0.1",
+    "humps": "^2.0.1",
+    "koa": "^2.8.1",
+    "koa-body": "^4.1.1",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.12.0",
+    "koa2-cors": "^2.0.6",
+    "koa-logger": "^3.2.1",
+    "path": "^0.12.7",
+    "pg": "^7.12.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.12.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-do-expressions": "^7.0.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "@commitlint/cli": "^7.1.2",
+    "@commitlint/config-angular": "^7.1.2",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.6.0",
+    "husky": "^1.0.0-rc.14",
+    "nodemon": "^1.19.1",
+    "standard": "^11.0.1",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}

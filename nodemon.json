@@ -1,0 +1,13 @@
+{
+  "restartable": "rs",
+  "ignore": [""],
+  "verbose":  true,
+  "ext":  "js json",
+  "watch": [
+    "./app/**"
+  ],
+  "env": {
+    "DEPLOY_ENV": "development"
+  },
+  "legacy-watch": false
+}
